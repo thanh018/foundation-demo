@@ -1,0 +1,43 @@
+.grid-container
+  .grid-x.grid-margin-x
+    .large-3
+    .large-6
+      h1 Create an account
+      p Already a member? 
+        a(href="#") Login now
+      form(action="")
+        .grid-x.grid-margin-x
+          .large-12
+            label Email
+            input(type="text" data-required="This field is required.")
+        .grid-x.grid-margin-x
+          .large-12
+            label Password
+            input(type="password" data-required="This field is required.")
+            p *Password is required 8 characters or more. And in combinations of capital letters, lowercase letters and numbers
+        .grid-x.grid-margin-x
+          .large-12
+            label First Name
+            input(type="text" data-required="This field is required.")
+        .grid-x.grid-margin-x
+          .large-12
+            label Last Name
+            input(type="text" data-required="This field is required.")
+        .grid-x.grid-margin-x
+          .large-12
+            input#checkbox1(type="checkbox")
+            label(for="checkbox1") I have read and agree to the Terms & Conditions and Privacy Policy
+          .large-12
+            input#checkbox2(type="checkbox")
+            label(for="checkbox2") I agree to the use of personal data for direct marketing of CMLink.
+        .grid-x.grid-margin-x
+          .large-8
+            label Please enter the text on the right
+            input(type="text" data-required="This field is required.")
+          .large-4
+            p L O K U Q M
+        .grid-x.grid-margin-x
+          .large-12
+            .button(type="submit").default Signup
+      
+    .large-3

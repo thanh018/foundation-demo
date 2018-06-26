@@ -1,0 +1,29 @@
+.grid-x.grid-padding-x
+  .small-3
+  .small-6
+    .cell
+      h1 Login
+      p Not a member?
+        a(href="#") Create now
+      form(data-abide='', novalidate='')
+        .grid-x.grid-padding-x
+          .small-12.cell
+            label
+              | Email
+              input(type='text', placeholder='',  aria-describedby='exampleHelpText', required='' pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+              span.form-error
+                | This field is required!
+          .small-12.cell
+            label
+              | Password
+              input#password(type='password', placeholder='', aria-describedby='exampleHelpText', required='' pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$")
+              span.form-error
+                | This field is required!
+            p#exampleHelpText.help-text Forgot Password? 
+                a(href="#") Reset Now
+          
+          fieldset.large-12.cell
+            button.button(type='submit', value='Submit') Login
+          
+  .small-3
+  
