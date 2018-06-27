@@ -1,5 +1,14 @@
 .banner {
-    span {
-        display: block;
+    position: relative;
+    height: 350px;
+    max-height: 450px;
+    border: 1px solid #333;
+    .banner-content {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .banner-heading {
+        font-weight: 600;
     }
 }

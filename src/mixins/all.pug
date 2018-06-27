@@ -1,0 +1,28 @@
+mixin link(title, href, text)
+  - if (typeof(text) === 'undefined') text = title
+  - if (typeof(href) === 'undefined') href = '#'
+  a(href=href, title=title)&attributes(attributes).link
+    if block
+      block
+    else
+      !=text
+mixin btn-default(title, subtitle)
+  - if(typeof(subtitle)=== 'undefined') subtitle =''
+  button.button.btn-default&attributes(attributes)
+    span.title=title
+    if subtitle
+      span.subtitle=subtitle
+    
+mixin btn-link(title, subtitle, href)
+  - if(typeof(subtitle)=== 'undefined') subtitle =''
+  +link(title, href).button.btn-link.btn-default&attributes(attributes)
+    span.title=title
+    if subtitle
+      span.subtitle=subtitle
+mixin banner(bannerHeading, description, title, subtitle, href)
+  section.banner&attributes(attributes).banner-block
+    .banner-content.centered
+      h1.banner-heading=bannerHeading
+      p.description=description
+      if title
+        +btn-link(title, subtitle, href)

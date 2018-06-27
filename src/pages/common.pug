@@ -1,0 +1,27 @@
+include ../mixins/all
+.grid-container
+  section
+    .main-title 1. Link
+    +link("Login now", "#", "Login now")
+
+    .main-title 2. Button default
+    +btn-default('LEARN MORE', '')
+
+    .main-title 3. Button Link
+    +btn-link('CREATE AN ACCOUNT', '(Get your free account in 2 steps)')
+
+    .main-title 4. Banner + button
+    +banner("CMI Membership Club",  "One membership allows you to manage all your CMI services. No matter you are travelling, studying or living overseas, you can always stay well connected with CMI.", 'CREATE AN ACCOUNT', '(Get your free account in 2 steps)', "#")
+    
+    .main-title 4. Banner description
+    +banner("关联家乡号",  "Never miss any SMS and Call from your China Mobile number when you are overseas. Stay connected with your beloved in China while you are away.").text-center
+
+    .main-title 5. Offer + Benefit
+
+    .benefit-item.text-center
+      .benefit-content.centered
+        .benefit-icon
+          span ICON 
+        .benefit-heading 关联家乡号
+        p.description Never miss any SMS and Call from your China mobile no. when you are at overseas.
+        +btn-default('LEARN MORE', '')
