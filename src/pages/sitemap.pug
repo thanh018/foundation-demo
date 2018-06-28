@@ -1,0 +1,22 @@
+extends ../layouts/template
+
+block container
+  h1.main-title.text-center CM Link
+  .grid-container.margin-top-30
+    .grid-x.grid-margin-x.margin-top-30
+      .large-12.medium-12.small-12
+        .grid-x.grid-margin-x
+          .large-4.medium-4.small-4.cell
+            +link("Home", "index.html", "Home").site-link
+          .large-4.medium-4.small-4.cell
+            +link("CMNumberLink-Intro", "CMNumberLink-Intro.html", "CMNumberLink Intro").site-link
+          .large-4.medium-4.small-4.cell
+            +link("CMLink-intro", "CMLink-intro.html", "CMLink intro").site-link
+      .large-12.medium-12.small-12.margin-top-30
+        .grid-x.grid-margin-x
+          .large-4.medium-4.small-4.cell
+            +link("Form login", "form-login.html", "Form Login").site-link
+          .large-4.medium-4.small-4.cell
+            +link("Register", "register.html", "Register").site-link
+          .large-4.medium-4.small-4.cell
+            +link("CMLink-intro", "CMLink-intro.html", "CMLink intro").site-link

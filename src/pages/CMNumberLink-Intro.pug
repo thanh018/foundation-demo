@@ -1,0 +1,11 @@
+extends ../layouts/layout
+
+block vars
+  -title = 'CMNumberLink-intro-list'
+  -bodyClass = 'CMNumberLink-intro-list'
+  -lang = 'en'
+
+block container
+  +banner("关联家乡号",  "Never miss any SMS and Call from your China Mobile number when you are overseas. Stay connected with your beloved in China while you are away.").text-center
+  include ../components/whatIs.pug
+  include ../components/activate.pug  

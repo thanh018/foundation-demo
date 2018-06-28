@@ -1,0 +1,28 @@
+extends ../layouts/layout
+
+block vars
+  -title = 'CMLink intro'
+  -bodyClass = 'CMLink-intro'
+  -lang = 'en'
+
+block container
+  +banner("CMLink",  "Never miss any SMS and Call from your China Mobile number when you are overseas. Stay connected with your beloved in China while you are away.").text-center
+  section.what-is-block.text-center
+    .what-is-content.max-width-50
+      h2.title-block What is CMLink?
+      p.info-block No matter you are travelling, studying or living oversears. CMLink offers your to stay connected instantly when you are just landed. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+    .grid-container.what-is-visual.margin-top-50
+      .grid-x.grid-margin-x
+        .visual-item.medium-4.large-4.cell.relative
+          .visual-content.centered
+            p [Visual to illustrate the benefit]
+            p [One simple plan, you can take advantage of no extra fees on data when travelling in the UK, selected destinations in the EU and China]
+        .visual-item.medium-4.large-4.cell.relative
+          .visual-content.centered
+            p [Visual to illustrate the benefit]
+            p Enjoy free international calls from the UK to any China Mobile user in the mainland.]
+        .visual-item.medium-4.large-4.cell.relative
+          .visual-content.centered
+            p [Visual to illustrate the benefit]
+            p [Get an extra 5% of data free every month with any of our Data Growth Packs. That’s up to 200% more 
+  include ../components/activate.pug  

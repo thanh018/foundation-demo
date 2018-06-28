@@ -1,17 +1,80 @@
 .main-title {
-    font-size: 26px;
-    text-transform: capitalize;
-    color: #333;
-    margin-top: 20px;
+  font-size: 26px;
+  text-transform: capitalize;
+  color: #333;
+  margin-top: 20px;
 }
 
 .link {
-    color: #333;
+  color: #333;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
+
+.title-block {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.info-block {
+  font-size: 14px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.padding-top-50 {
+  padding-top: 50px;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 50px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.site-link {
+  width: 100%;
+  display: inline-block;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  &:hover, &:focus {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+

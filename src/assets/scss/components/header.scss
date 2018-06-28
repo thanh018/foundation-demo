@@ -1,4 +1,7 @@
 .menu {
+    height: 85px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
     ul {
         margin: 0;
         padding: 0;
@@ -9,7 +12,7 @@
     }
 
     .logo  {
-      display: block;
+      display: inline-block;
       width: 250px;
       height: 75px;
       padding: 0;
@@ -24,7 +27,7 @@
 
 
 
-.login-block {
+.login-member {
   span {
     display: inline-block;
   }

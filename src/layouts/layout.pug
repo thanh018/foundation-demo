@@ -1,0 +1,44 @@
+include ../mixins/all
+
+block vars
+  -title = 'Site'
+  -bodyClass = ''
+  -lang = ""
+
+doctype html
+html(class="no-js", lang=lang)
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title=title
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    meta(name="robots", content="index, follow")
+    meta(name="branch:deeplink:lang", content="ar")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="icon", href="favicon-16x16.png", type="image/x-icon", sizes="16x16")
+    // build:css css/style.css
+    link(rel="stylesheet", href="style/libs.css")
+    link(rel="stylesheet", href="style/style.css")
+    link(rel="stylesheet", href="style/print.css")
+    // endbuild
+    // build:development-only
+    link(rel="stylesheet", href="style/edit.css")
+    // endbuild
+    link(rel="preconnect", href="localhost:3000")
+    script(src="js/modernizr.js")
+    script(src="//maps.google.com/maps/api/js?v=3.31&key=AIzaSyCVFxYNNHymzAc713yyoiE8yyoHDD5rOqM")
+    script(src="//www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en")
+    if title == 'detail'
+      link(rel="prefetch", href="images/detail-cover.jpg")
+
+  body(class=bodyClass)
+    #google-translate-element.google-translate-element
+    
+    include ../components/header
+    main.main-page
+      block container
+    include ../components/footer
+    //[if lte IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]
+    noscript JavaScript is off. Please enable to view full site.

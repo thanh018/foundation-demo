@@ -1,0 +1,10 @@
+include ../mixins/all
+section.activate.text-center.padding-bottom-80
+  .active-content.max-width-50.margin-center 
+    h2.title-block Activate your 关联家乡号 with us now!
+    p.info-block Enable your 关联家乡号 service with your CMLink membership account now and stay connected with your beloved via your China Mobile number.
+    +btn-link('CREATE AN ACCOUNT', '(Get your free account in 2 steps)')
+    .condition-action.login-member
+      span.condition Already a member?
+      +link("Login now", "#", "Login now")(class="login").action-link
+

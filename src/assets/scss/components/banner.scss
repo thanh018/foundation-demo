@@ -1,14 +1,18 @@
 .banner {
-    position: relative;
-    height: 350px;
-    max-height: 450px;
-    border: 1px solid #333;
-    .banner-content {
-        width: 70%;
-        margin: 0 auto;
-    }
+  position: relative;
+  height: 350px;
+  max-height: 450px;
+  border: 1px solid #ddd;
+  .banner-content {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    .banner-heading {
-        font-weight: 600;
-    }
+  .banner-heading {
+    font-weight: 600;
+  }
+
+  .btn-default {
+    margin-top: 30px;
+  }
 }

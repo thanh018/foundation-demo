@@ -1,0 +1,23 @@
+.what-is-block {
+  padding-top: 100px;
+  .what-is-content {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.what-is-visual {
+  .visual-item {
+    height: 250px;
+    border: 1px solid #ddd;
+  }
+
+  .visual-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.max-width-50 {
+  max-width: 50%;
+}

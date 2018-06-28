@@ -1,0 +1,17 @@
+include ../mixins/all
+.menu.clearfix
+  a(href="index.html" title="logo").logo.float-left
+    img(src="./assets/img/logo.jpg")
+  ul.menu-right.float-right.align-right
+    li.login-member
+      span.has-account Already a member?
+      +link("login", "form-login.html", "Login").link.login
+    li.lang-en
+      +link("english", "#", "EN").link.english
+    li.lang-china
+      +link("简", "#", "简").link.china
+
+      
+
+
+     

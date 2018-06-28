@@ -1,0 +1,36 @@
+.form-login {
+  min-height: 680px;
+  .condition-action {
+    margin-top: 5px;
+  }
+}
+
+.form-input {
+  border-color: #333;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.btn-form {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.form-label {
+  margin-top: 10px;
+}
+
+fieldset {
+  margin-top: 5px;
+}
+
+.form-register {
+  padding: 50px 0;
+}
+
+.form-error {
+  margin-top: 5px;
+}
