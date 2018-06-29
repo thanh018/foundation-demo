@@ -32,6 +32,18 @@
   }
 }
 
+.btn-gray {
+  background-color: gray;
+  color: #fff;
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  &:hover, &:focus {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
 .login-member {
   .login {
     font-weight: 600;

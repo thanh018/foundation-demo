@@ -1,0 +1,60 @@
+extends ../layouts/layout
+
+block vars
+  -title = 'Bind-Sim'
+  -bodyClass = 'bind-simsno'
+  -lang = 'en'
+block container
+  .bind-sim
+    .grid-x.grid-padding-x
+      .small-3
+      .small-6
+        .cell
+          .bink-info.text-center
+            .bink-content
+              h2.main-title Your CMLink membership is ready
+              p.subtitle We just sent the verification email to your 
+                span.email tomleung@gmail.com, 
+                | please verify within 7 days.
+          
+      .small-3
+    
+    .grid-x.grid-padding-x
+      .small-3
+      .small-6
+        .cell
+          .bink-CMLink-form
+            h1.heading-block.text-center Bind your CMLink Number
+            p.subtitle.text-center No CMLink number? Get one from 
+              +link("here", "#", "here")
+              | now. or 
+              +link("Skip", "#", "Skip")
+              | for now.
+            form(data-abide='', novalidate='').bink-form
+              .grid-x.grid-padding-x
+                .small-12.cell
+                  .grid-x.grid-padding-x
+                    .small-8.cell
+                      label.form-label
+                        | CMLink Number
+                        input.form-input(type='number', placeholder='',  aria-describedby='exampleHelpText', required='' pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+                        span.form-error
+                          | This field is required!
+                    .small-4.cell
+                      button.button.btn-getcode.btn-gray(type='submit', value='Submit') Submit
+                .small-12.cell
+                  label.form-label
+                    | Verification Code from SMS
+                    input.form-input#password(type='password', placeholder='', aria-describedby='exampleHelpText', required='' pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$")
+                    span.form-error
+                      | This field is required!
+              .grid-x.grid-padding-x
+                fieldset.large-12.cell
+                  button.button.btn-form.btn-black(type='submit', value='Bind It') Bind It
+      .small-3
+
+
+
+
+    
+
