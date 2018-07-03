@@ -1,0 +1,37 @@
+include ../mixins/all
+.select-top-up
+  h1.title-block Your mobile number
+  .grid-x.grid-margin-x
+    .large-12.medium-12.small-12
+      .grid-x.grid-margin-x
+        .medium-4.large-4.cell
+          .amount-item.text-center.relative
+            span.amount-price-1.centered £10
+            span.amount-price-2 /¥89
+        .medium-4.large-4.cell
+          .amount-item.text-center.relative
+            span.amount-price-1.centered £20
+            span.amount-price-2 /¥178
+        .medium-4.large-4.cell
+          .amount-item.text-center.relative
+            span.amount-price-1.centered £30
+            span.amount-price-2 /¥268
+    .large-12.medium-12.small-12
+      .grid-x.grid-margin-x
+          .medium-4.large-4.cell
+            .amount-item.text-center.relative
+              span.amount-price-1.centered £10
+              span.amount-price-2 /¥89
+          .medium-4.large-4.cell
+            .amount-item.text-center.relative
+              span.amount-price-1.centered £20
+              span.amount-price-2 /¥178
+          .medium-4.large-4.cell
+            .amount-item.text-center.relative
+              span.amount-price-1.centered £30
+              span.amount-price-2 /¥268
+  p.amount-note.text-center
+    span.note-icon i
+    span.note-text  Min £10 / Max £40
+  .pay-now.text-right
+    +btn-link('PAY NOW', '', "#").btn-black.btn-paynow

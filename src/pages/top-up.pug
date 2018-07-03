@@ -1,0 +1,12 @@
+extends ../layouts/layout
+
+block vars
+  -title = 'your-mobile-number'
+  -bodyClass = 'your-mobile-number'
+  -lang = 'en'
+
+block container
+  .grid-container
+    h1.main-title Top-up
+    include ../components/your-mobile.pug
+    include ../components/select-top-up.pug  
