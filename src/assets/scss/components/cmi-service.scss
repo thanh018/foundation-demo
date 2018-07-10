@@ -1,0 +1,41 @@
+.icon-service {
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.cmi-service-item {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #ddd;
+  .service-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 15px;
+  }
+
+  .service-content {
+    padding-left: 45px;
+  }
+
+  .btn-service {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.info-service-item {
+  .icon-service {
+    margin-right: 10px;
+  }
+}
+
+.icon-link{
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -19,6 +19,13 @@ mixin btn-link(title, subtitle, href)
     span.title=title
     if subtitle
       span.subtitle=subtitle
+
+mixin btn-link-icon(title, src, href)
+  +link(title, href).button.btn-link.btn-link-icon.btn-default&attributes(attributes)
+    span.icon-link
+      img(src=src)
+    span.title=title
+    
 mixin banner(bannerHeading, description, title, subtitle, href)
   section.banner&attributes(attributes).banner-block
     .banner-content.centered
@@ -26,3 +33,11 @@ mixin banner(bannerHeading, description, title, subtitle, href)
       p.description=description
       if title
         +btn-link(title, subtitle, href)
+
+mixin banner2(subText, bannerHeading, description)
+  section.banner&attributes(attributes).banner-block
+    .banner-content.centered
+      p.sub-text=subText
+      h1.banner-heading=bannerHeading
+      p.description=description
+      

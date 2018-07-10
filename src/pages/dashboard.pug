@@ -1,0 +1,12 @@
+extends ../layouts/layout
+
+block vars
+  -title = 'dashboard'
+  -bodyClass = 'dashboard'
+  -lang = 'en'
+
+block container
+  .grid-container
+    +banner2("Welcome Back!",  "Mr. Tom Leung", "One CMI membership account, covers all your need.").text-center
+    include ../components/cmlink-service.pug
+    include ../components/benefit.pug
